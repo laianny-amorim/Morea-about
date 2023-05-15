@@ -1,0 +1,47 @@
+.containerMain__about {
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 50px - 70px);
+    padding: 30px 50px;
+    margin-inline: auto;
+}
+
+.containerMain__about section {
+    width: 100%;
+}
+
+.container__imagesAdvisor {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.container__about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content__about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container__imagesStudents{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.img-teacher img,
+.img-student img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}

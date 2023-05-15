@@ -1,0 +1,53 @@
+{% extends 'layout.html' %} 
+
+{% load static %}
+
+{% block title %}Morea | Home{% endblock %}
+
+{% block stylesCustom %}
+  <link rel="stylesheet" href="{% static 'about/css/about.css' %}" />
+  <link rel="stylesheet" href="{% static 'layout/css/layout.css' %}" />
+  <link rel="stylesheet" href="{% static 'layout/css/menu.css' %}" />
+  <link rel="stylesheet" href="{% static 'layout/css/index.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="containerMain__about">    
+
+    <section class="container__about">
+        <div class="title">
+            <h1>Professores Orientadores</h1>
+            <p>O projeto Morea é orientado pelos docentes Rubens de Souza Matos Júnior e Alfredo Menezes Vieira.</p>             
+        </div>        
+        <div class="container__imagesAdvisor">
+            <div class="img-teacher">
+                    <img src="{% static 'assets/images/rubens.jpg' %}" alt="Rubens Matos">
+            </div>
+            <div class="img-teacher">
+                <img src="{% static 'assets/images/alfredo.jpg' %}" alt="Alfredo Vieira">
+        </div>
+    </section>
+
+    <section class="content__about">        
+        <div class="title">
+            <h1>Alunos Bolsistas</h1>
+            <p>Os discentes estão cursando o Ensino Técnico de Nível Médio Integrado em Redes de Computadores, no Instituto Federal de Sergipe - Campus Lagarto. </p>
+        </div> 
+        <div class="container__imagesStudents">
+            <div class="img-student">
+                <img src="{% static 'assets/images/felipe.jpg' %}" alt="Felipe Carvalho">
+            </div>
+            <div class="img-student">
+                <img src="{% static 'assets/images/henrique.jpg' %}" alt="Henrique Oliveira">
+            </div>
+            <div class="img-student">
+                <img src="{% static 'assets/images/laianny.jpg' %}" alt="Laianny Amorim">
+            </div>
+            <div class="img-student">
+                <img src="{% static 'assets/images/adriely.jpg' %}" alt="Adriely Silva">
+            </div>
+        </div> 
+    </section>
+</div>
+
+{% endblock %}
